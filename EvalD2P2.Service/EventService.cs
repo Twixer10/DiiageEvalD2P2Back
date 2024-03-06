@@ -17,4 +17,14 @@ public class EventService : IEventService
     {
         return this._eventRepository.AddEvent(newEvent);
     }
+
+    public Task<IEnumerable<Event>> GetAllEvents(int limit, int page)
+    {
+        return this._eventRepository.GetAllEvents(limit, page);
+    }
+
+    public Task<int> GetEventCount()
+    {
+        return this._eventRepository.GetEventCount();
+    }
 }
