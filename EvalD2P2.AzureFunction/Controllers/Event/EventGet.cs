@@ -61,4 +61,50 @@ public class EventGet
 
         return response;
     }
+
+    [Function("EventGetById")]
+    public async Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "events/{id}")]
+        HttpRequestData req,
+        int id)
+    {
+        var response = req.CreateResponse(HttpStatusCode.OK);
+        response.Headers.Add("Content-Type", "application/json; charset=utf-8");
+        if (id <= 0)
+        {
+            response.StatusCode = HttpStatusCode.BadRequest;
+            await response.WriteStringAsync(
+                JsonConvert.SerializeObject(
+                    new { errorMessage = "Invalid event id. Cannot be less than 1." }));
+        }
+        else
+        {
+            try
+            {
+                var evnt = await _eventService.GetEvent(id);
+                if (evnt != null)
+                {
+                    await response.WriteStringAsync(JsonConvert.SerializeObject(evnt));
+                }
+                else
+                {
+                    response.StatusCode = HttpStatusCode.NotFound;
+                    await response.WriteStringAsync(JsonConvert.SerializeObject(new
+                        { errorMessage = "Event not found." }));
+                }
+            }
+            catch (Exception e)
+            {
+                response.StatusCode = HttpStatusCode.InternalServerError;
+                var error = new
+                {
+                    errorMessage = e.Message,
+                    stackTrace = e.StackTrace
+                };
+                await response.WriteStringAsync(JsonConvert.SerializeObject(error));
+            }
+        }
+
+        return response;
+    }
 }

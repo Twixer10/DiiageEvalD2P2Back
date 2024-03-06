@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EvalD2P2.Entity\EvalD2P2.Entity.csproj" />
+      <ProjectReference Include="..\EvalD2P2.Repository.Contracts\EvalD2P2.Repository.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>
