@@ -1,5 +1,4 @@
 using System.Net;
-using EvalD2P2.DTO;
 using EvalD2P2.Service.Contracts;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
