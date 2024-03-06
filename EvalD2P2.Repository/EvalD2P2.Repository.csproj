@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\EvalD2P2.DAL\EvalD2P2.DAL.csproj" />
+      <ProjectReference Include="..\EvalD2P2.Repository.Contracts\EvalD2P2.Repository.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

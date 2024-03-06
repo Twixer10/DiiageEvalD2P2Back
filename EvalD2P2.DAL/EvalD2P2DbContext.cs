@@ -5,6 +5,9 @@ namespace EvalD2P2.DAL;
 
 public class EvalD2P2DbContext : DbContext
 {
+    
+    public DbSet<Event> Events { get; set; } = null!;
+    
     public EvalD2P2DbContext(DbContextOptions<EvalD2P2DbContext> options) : base(options)
     {
     }
