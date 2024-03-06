@@ -13,12 +13,12 @@ public class EventService : IEventService
         this._eventRepository = eventRepository;
     }
 
-    public Task<Event> AddEvent(Event newEvent)
+    public Task<Event?> AddEvent(Event? newEvent)
     {
         return this._eventRepository.AddEvent(newEvent);
     }
 
-    public Task<IEnumerable<Event>> GetAllEvents(int limit, int page)
+    public Task<IEnumerable<Event?>> GetAllEvents(int limit, int page)
     {
         return this._eventRepository.GetAllEvents(limit, page);
     }
@@ -26,5 +26,15 @@ public class EventService : IEventService
     public Task<int> GetEventCount()
     {
         return this._eventRepository.GetEventCount();
+    }
+
+    public Task<Event?> EditEvent(Event? newEvent)
+    {
+        return this._eventRepository.EditEvent(newEvent);
+    }
+
+    public Task<Event?> GetEvent(int id)
+    {
+        return this._eventRepository.GetEvent(id);
     }
 }
