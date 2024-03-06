@@ -43,4 +43,11 @@ public class EventRepository : IEventRepository
     {
         return await this._dbContext.Events.FindAsync(id);
     }
+
+    public async Task<bool> DeleteEvent(Event evnt)
+    {
+        this._dbContext.Events.Remove(evnt);
+        await this._dbContext.SaveChangesAsync();
+        return true;
+    }
 }

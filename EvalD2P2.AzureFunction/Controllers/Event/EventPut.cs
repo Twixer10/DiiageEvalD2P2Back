@@ -14,7 +14,7 @@ public class EventPut
 
     public EventPut(IEventService eventService)
     {
-        _eventService = eventService;
+        this._eventService = eventService;
     }
 
     [Function("EditEvent")]

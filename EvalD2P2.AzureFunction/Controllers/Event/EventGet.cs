@@ -14,7 +14,7 @@ public class EventGet
 
     public EventGet(IEventService eventService)
     {
-        _eventService = eventService;
+        this._eventService = eventService;
     }
 
     [Function("EventGet")]

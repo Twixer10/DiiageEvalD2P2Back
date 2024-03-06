@@ -28,13 +28,18 @@ public class EventService : IEventService
         return this._eventRepository.GetEventCount();
     }
 
-    public Task<Event?> EditEvent(Event? newEvent)
+    public Task<Event?> EditEvent(Event? evnt)
     {
-        return this._eventRepository.EditEvent(newEvent);
+        return this._eventRepository.EditEvent(evnt);
     }
 
     public Task<Event?> GetEvent(int id)
     {
         return this._eventRepository.GetEvent(id);
+    }
+
+    public Task<bool> DeleteEvent(Event evnt)
+    {
+        return this._eventRepository.DeleteEvent(evnt);
     }
 }
