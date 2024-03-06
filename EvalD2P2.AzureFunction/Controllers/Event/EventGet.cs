@@ -63,7 +63,7 @@ public class EventGet
     }
 
     [Function("EventGetById")]
-    public async Task<HttpResponseData> Run(
+    public async Task<HttpResponseData> GetById(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "events/{id}")]
         HttpRequestData req,
         int id)
