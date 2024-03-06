@@ -11,6 +11,10 @@
         <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.19.0"/>
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.1.0" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.15.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.16">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <None Update="host.json">
@@ -23,5 +27,8 @@
     </ItemGroup>
     <ItemGroup>
         <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\EvalD2P2.DAL\EvalD2P2.DAL.csproj" />
     </ItemGroup>
 </Project>
