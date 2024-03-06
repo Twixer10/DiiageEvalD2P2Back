@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.AzureFunction", "EvalD2P2.AzureFunction\EvalD2P2.AzureFunction.csproj", "{CBD3F685-8D56-4238-AE5B-457F30E38616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.DAL", "EvalD2P2.DAL\EvalD2P2.DAL.csproj", "{6AD2ABEA-BADF-4399-81F3-F324FA56BADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.Entity", "EvalD2P2.Entity\EvalD2P2.Entity.csproj", "{B4B25932-A866-4B14-80ED-F4415B09C713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.Repository", "EvalD2P2.Repository\EvalD2P2.Repository.csproj", "{80241635-0DF2-4F21-995F-9B53F3C532AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.Repository.Contracts", "EvalD2P2.Repository.Contracts\EvalD2P2.Repository.Contracts.csproj", "{A6026310-B8D4-4EE7-82FD-AE2C073E12F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.Service", "EvalD2P2.Service\EvalD2P2.Service.csproj", "{56D67D80-7BE3-412E-9929-A9411F499D6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvalD2P2.Service.Contracts", "EvalD2P2.Service.Contracts\EvalD2P2.Service.Contracts.csproj", "{F0F9C549-CA3F-445B-AC08-2EB4B80E4BF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBD3F685-8D56-4238-AE5B-457F30E38616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD3F685-8D56-4238-AE5B-457F30E38616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD3F685-8D56-4238-AE5B-457F30E38616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD3F685-8D56-4238-AE5B-457F30E38616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD2ABEA-BADF-4399-81F3-F324FA56BADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD2ABEA-BADF-4399-81F3-F324FA56BADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD2ABEA-BADF-4399-81F3-F324FA56BADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD2ABEA-BADF-4399-81F3-F324FA56BADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B25932-A866-4B14-80ED-F4415B09C713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B25932-A866-4B14-80ED-F4415B09C713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B25932-A866-4B14-80ED-F4415B09C713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B25932-A866-4B14-80ED-F4415B09C713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80241635-0DF2-4F21-995F-9B53F3C532AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80241635-0DF2-4F21-995F-9B53F3C532AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80241635-0DF2-4F21-995F-9B53F3C532AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80241635-0DF2-4F21-995F-9B53F3C532AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6026310-B8D4-4EE7-82FD-AE2C073E12F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6026310-B8D4-4EE7-82FD-AE2C073E12F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6026310-B8D4-4EE7-82FD-AE2C073E12F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6026310-B8D4-4EE7-82FD-AE2C073E12F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D67D80-7BE3-412E-9929-A9411F499D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D67D80-7BE3-412E-9929-A9411F499D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D67D80-7BE3-412E-9929-A9411F499D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D67D80-7BE3-412E-9929-A9411F499D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F9C549-CA3F-445B-AC08-2EB4B80E4BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F9C549-CA3F-445B-AC08-2EB4B80E4BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F9C549-CA3F-445B-AC08-2EB4B80E4BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F9C549-CA3F-445B-AC08-2EB4B80E4BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
